@@ -5,45 +5,18 @@ function draw_chart() {
 	c.height = window.innerHeight;
 	var ctx = c.getContext("2d");
 
-  	ctx.fillStyle="#00090A";
-  	ctx.font="30px sans-serif";
-  	ctx.fillText("Elasmobranchii (Chondrichthyes)", 400, 50);
+	var node_ids = ['elasmo','hexan','heter','oreet','squal','lamni','charc','squan',
+					'echni','prist']
+	var node_coords = [[480,110],[360,200],[720,200],[100,300],[800,300],[200,400],
+						[400,400],[850,400],[900,500],[1100,500]]
 
-  	ctx.fillStyle="#00090A";
-  	ctx.font="20px sans-serif";
-  	ctx.fillText("Hexanchiformes", 350, 150);
+	for(i=0;i<node_ids.length;i++) {
+		d = document.getElementById(node_ids[i])
+		d.style.position = 'absolute';
+		d.style.left = node_coords[i][0]+'px';
+		d.style.top = node_coords[i][1]+'px';
+	};
 
-  	ctx.fillStyle="#00090A";
-  	ctx.font="20px sans-serif";
-  	ctx.fillText("Heterodontiformes", 700, 150);
-
-  	ctx.fillStyle="#00090A";
-  	ctx.font="20px sans-serif";
-  	ctx.fillText("Oreetolobiformes", 100, 250);
-
-  	ctx.fillStyle="#00090A";
-  	ctx.font="20px sans-serif";
-  	ctx.fillText("Squaliformes", 800, 250);
-
-  	ctx.fillStyle="#00090A";
-  	ctx.font="20px sans-serif";
-  	ctx.fillText("Lammiformes", 200, 350);
-
-  	ctx.fillStyle="#00090A";
-  	ctx.font="20px sans-serif";
-  	ctx.fillText("Carcharniniformes", 400, 350);
-
-  	ctx.fillStyle="#00090A";
-  	ctx.font="20px sans-serif";
-  	ctx.fillText("Squantiformes", 850, 350);
-
-  	ctx.fillStyle="#00090A";
-  	ctx.font="20px sans-serif";
-  	ctx.fillText("Echinorhiniformes", 900, 450);
-
-  	ctx.fillStyle="#00090A";
-  	ctx.font="20px sans-serif";
-  	ctx.fillText("Pristiophoriformes", 1100, 450);
 
   	coords = [[600,100], [780,100], [780,130], [780,100], [900,100], [900,200], [860,200],
   				[860,230], [860,200], [960,200], [960,300], [910,300], [910,330], [910,300],
