@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 	<html>
-		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="leftstyle.css">
 		<script type="text/javascript" src="cladogram1.js"></script>
 		<body>
-			<div id='header' onclick="location.href='newurl.html';">
+			<div id='header'>
 				<h1>Shark Cladogram</h1>
+				<a href='index.html' id='back_button'>Back</a>
+				<img src="http://1010wcsi.com/wp-content/uploads/2015/02/twitter_icon.png" id='twitter_logo'>
 			</div>
+
+			<canvas id="cladoshark">
+			</canvas>
 
 
 			<script>
-				print();
+			draw_chart();
 			</script>
+
+
 
 		</body>
 	</html>
