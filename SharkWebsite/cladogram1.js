@@ -1,1 +1,3 @@
-var = 'hello';
+function print() {
+	console.log('Hellow!!!');
+};
