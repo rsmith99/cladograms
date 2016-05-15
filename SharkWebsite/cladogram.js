@@ -7,8 +7,8 @@ function draw_chart() {
 
 	var node_ids = ['elasmo','hexan','heter','oreet','squal','lamni','charc','squan',
 					'echni','prist']
-	var node_coords = [[480,90],[360,170],[720,170],[100,300],[800,300],[200,400],
-						[400,400],[850,380],[900,460],[1100,460]]
+	var node_coords = [[480,90],[360,170],[720,170],[110,280],[800,270],[200,400],
+						[400,400],[850,360],[900,460],[1100,460]]
 
 	for(i=0;i<node_ids.length;i++) {
 		d = document.getElementById(node_ids[i])
@@ -28,6 +28,7 @@ function draw_chart() {
   	ctx.moveTo(600, 60);
   	ctx.strokeStyle='#FFA500';
   	ctx.lineWidth=5;
+
   	for(i=0; i<coords.length; i++){
   		if(i==21){
   			ctx.moveTo(coords[i][0],coords[i][1]);
@@ -40,14 +41,19 @@ function draw_chart() {
 	ctx.stroke();
 
 	document.getElementById("charc").onmouseover = function() {mouseOver()};
+  document.getElementById("prist").onmouseover = function() {mouseOver2()};
 
 	function mouseOver() {
     	document.getElementById("info-title").innerHTML = Carcharniniformes_title;
     	document.getElementById("info-description").innerHTML = Carcharniniformes_Description;
     	document.getElementById('info-image').src = 'http://imgc.allpostersimages.com/images/P-473-488-90/69/6997/L77W100Z/posters/fishes-carcharhiniformes-school-of-sharks-galeorhinus-galeus-illustration.jpg'
-
 	}
 
+  function mouseOver2() {
+      document.getElementById("info-title").innerHTML = Pristiophoriformes_title;
+      document.getElementById("info-description").innerHTML = Pristiophoriformes_Description;
+      document.getElementById('info-image').src = 'https://upload.wikimedia.org/wikipedia/commons/d/dc/Pristis_pectinata_-_Georgia_Aquarium_Jan_2006.jpg'
+  }
 
 
-};
+};  
