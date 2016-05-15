@@ -26,7 +26,7 @@ function draw_chart() {
   				[480,400], [480,450]]
 
   	ctx.moveTo(600, 60);
-  	ctx.strokeStyle='white';
+  	ctx.strokeStyle='#FFA500';
   	ctx.lineWidth=5;
   	for(i=0; i<coords.length; i++){
   		if(i==21){
