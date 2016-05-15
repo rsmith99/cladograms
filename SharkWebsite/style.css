@@ -13,12 +13,30 @@ body {
     text-align:center;
 }
 
+#back_button {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+    color:white;
+}
+
+#title {
+	position: absolute;
+	left:250px;
+}
+
+#contact {
+	position: absolute;
+	top:30px;
+	right:250px;
+}
+
 #cladoleft {
 	position: absolute;
-	left: 40px;
 	bottom: 20px;
-	width: 40%;
-	height: 70%;
+	left:20px;
+	right:20px;
+	height: 80%;
     background-color:#06548C;
     color:white;
     text-align:center;
@@ -29,21 +47,53 @@ body {
    background-color:#B6E8ED;
 }
 
-#cladoright {
-	position: absolute;
-	right: 40px;
-	width: 40%;
-	height: 70%;
-	bottom: 20px;
-    background-color:#06548C;
-    color:white;
-    text-align:center;
-    line-height: 500px;
+#twitter_logo {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  width:30px;
+  height: 30px;
 }
 
-#cladoright:hover{
-   background-color:#B6E8ED;
+#facebook_logo {
+  position: absolute;
+  top: 20px;
+  right: 70px;
+  width:30px;
+  height: 30px;
 }
+
+#github_logo {
+  position: absolute;
+  top: 15px;
+  right: 105px;
+  width:40px;
+  height: 40px;
+}
+#contact-form {
+  position: absolute;
+  top: 150px;
+  left: 105px;
+}
+
+#map {
+	position: absolute;
+	left: 400px;
+	top: 100px;
+    width: 500px;
+    height: 400px;
+    background-color: #CCC;
+}
+
+#BeckyDeets {
+	position: absolute;
+	left: 100px;
+	top: 530px;
+    width: 500px;
+    height: 200px;
+    background-color: #CCC;
+}
+
 
 
 

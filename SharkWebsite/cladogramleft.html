@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 	<html>
 		<link rel="stylesheet" type="text/css" href="leftstyle.css">
+		<script type="text/javascript" src="descriptions.js"></script>
 		<script type="text/javascript" src="cladogram1.js"></script>
 		<body>
 			<div id='header'>
 
-				<h1>Shark Cladogram</h1>
+				<h1 id='title'>Shark Cladogram</h1>
 
 				<a href='index.html' id='back_button'>Back</a>
 
@@ -26,9 +27,24 @@
 
 			</div>
 
-			<canvas id="cladoshark">
-			</canvas>
+			<div id='lower'>
+				<h id='info-title'></h>
+				<p id='info-description'></p>
+				<img id='info-image'/>
+			</div>
 
+			<canvas id="cladoshark"></canvas>
+
+			<a id='elasmo' class='nodes'>Elasmobranchii (Chondrichthyes)</a>
+			<a id='hexan' class='nodes'>Hexanchiformes</a>
+			<a id='heter' class='nodes'>Heterodontiformes</a>
+			<a id='oreet' class='nodes'>Oreetolobiformes</a>
+			<a id='squal' class='nodes'>Squaliformes</a>
+			<a id='lamni' class='nodes'>Lammiformes</a>
+			<a id='charc' class='nodes2'>Carcharniniformes</a>
+			<a id='squan' class='nodes'>Squantiformes</a>
+			<a id='echni' class='nodes'>Echinorhiniformes</a>
+			<a id='prist' class='nodes'>Pristiophoriformes</a>
 
 			<script>
 			draw_chart();

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+	<html>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<body>
+			<div id='header'>
+				<h1 id='title'>Contact</h1>
+				<a href='index.html' id='back_button'>Back</a>
+				<a href="https://twitter.com/NHM_London">
+					<img src="http://1010wcsi.com/wp-content/uploads/2015/02/twitter_icon.png"
+  						alt="Natural History Museum Twitter" id='twitter_logo'/>
+  				</a>
+
+  				<a href="https://www.facebook.com/naturalhistorymuseum/">
+					<img src="https://www.facebookbrand.com/img/fb-art.jpg"
+  						alt="Natural History Museum Facebook" id='facebook_logo'/>
+  				</a>
+
+  				 <a href="https://github.com/rsmith99/cladograms">
+					<img src="http://www.jeffwarddevelopment.com/img/github_logo.png"
+  						alt="Github Repo" id='github_logo'/>
+  				</a>
+			</div>
+
+			<form id='contact-form'>
+  				First name:<br>
+  				<input type="text" name="firstname">
+  				<br>
+  				Last name:<br>
+  				<input type="text" name="lastname">
+  				<br>
+  				Email:<br>
+  				<input type="text" name="email">
+  				<br>
+  				Phone Number:<br>
+  				<input type="text" name="phonenumber">
+			</form>
+
+			<div id='BeckyDeets'>
+				<p>Name: Rebekah Smith</p>
+				<p>Phone: 08739879798</p>
+				<p>Email: rebekah.smith99@yahoo.com</p>
+			</div>
+
+
+			<div id="map"></div>
+			
+			<script>
+      			function initMap() {
+        			var mapDiv = document.getElementById('map');
+        			var map = new google.maps.Map(mapDiv, {
+          				center: {lat: 51.49656, lng: -0.17651},
+          				zoom: 14
+        			});
+
+        		var marker = new google.maps.Marker({
+  					position: {lat: 51.49656, lng: -0.17651},
+  					map: map,
+				});
+      			}
+    		</script>
+    		<script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+        		async defer></script>
+
+
+
+
+		</body>
+	</html>
