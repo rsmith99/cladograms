@@ -8,7 +8,7 @@ function draw_chart() {
 	var node_ids = ['elasmo','hexan','heter','oreet','squal','lamni','charc','squan',
 					'echni','prist']
 	var node_coords = [[480,90],[360,170],[720,170],[100,300],[800,300],[200,400],
-						[400,400],[850,400],[900,460],[1100,460]]
+						[400,400],[850,380],[900,460],[1100,460]]
 
 	for(i=0;i<node_ids.length;i++) {
 		d = document.getElementById(node_ids[i])
